@@ -1,0 +1,99 @@
+#root {
+  max-width: 1280px;
+  text-align: center;
+  justify-content: center;
+  --bg: #151c2c;
+  --bgSoft: #182237;
+  --text: white;
+  --textSoft: #b7bac1;
+  background-color: var(--bgSoft);
+}
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+.page{
+  display: flex;
+}
+.logo {
+  height: 27rem;
+  padding: 5em;
+  will-change: filter;
+  transition: filter 300ms;
+  width: 50%;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em white);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em white);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+
+.form input {
+  width: 100%;
+  padding: 30px;
+  border: 2px solid #2e374a;
+  border-radius: 5px;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.form button {
+  width: 100%;
+  padding: 30px;
+  background-color: teal;
+  color: var(--text);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.form {
+  background-color: var(--bgSoft);
+  padding: 50px;
+  border-radius: 10px;
+  width: 175%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* gap: 5px; */
+}
+
+.form input {
+  width: 75%;
+  padding: 30px;
+  border: 2px solid #2e374a;
+  border-radius: 5px;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.form button {
+  width: 86%;
+  margin: 30px;
+  padding: 30px;
+  background-color: teal;
+  color: var(--text);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+}
